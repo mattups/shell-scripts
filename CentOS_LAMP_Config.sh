@@ -1,5 +1,5 @@
 #!/bin/bash
-# LAMP install script for CentOS 7
+# LAMP Stack installation script for CentOS 7
 # Remember to chmod +x on this file to make it executable!
 
 echo -e "\e[1;4;36m<-------------Starting!----------->\e[0m"
