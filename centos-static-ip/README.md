@@ -2,16 +2,16 @@
 
 First thing to do to use this script, is making it executable with the following command:
 
-`chmod +x CentOS_static_ip_configuration_script.sh`
+`chmod +x static-ip.sh`
 
 Once you're sure it's executable, simply type
 
-`./hosting_backup_script.sh`
+`./static-ip.sh`
 
 and follow the prompt to set a static IP address on your CentOS-based machine.
 
 
-# Tips
+# Notes
 
 Be sure you can use __nmcli__. Even if is generally present on CentOS 7 (minimal), sometimes things just won't work out.
 You know, we don't have guarantees in IT.

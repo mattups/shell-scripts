@@ -6,7 +6,7 @@ $rebootDetail = (Get-WinEvent -LogName System -FilterXPath "*[System[(EventID=10
    
 # Required parameters for Send-MailMessage.
 $from = "from@example.com"
-$to = "to@example.co"
+$to = "to@example.com"
 $subject = "An example subject"
 
 $message = "Hostname: " `
@@ -16,7 +16,7 @@ $message = "Hostname: " `
     + "Last shutdown detail: " `
     + $rebootDetail
 
-$SMTPserver = "example.smtpserver.com"
+$smtpServer = "example.smtpserver.com"
 
 # Delay for sending (five minutes here). Uncomment the next line if you want to delay the email.
 # Start-Sleep -s 300
@@ -26,4 +26,4 @@ Send-MailMessage `
     -To $to `
     -Subject $subject `
     -Body $message `
-    -SmtpServer $SMTPserver
+    -SmtpServer $smtpServer
